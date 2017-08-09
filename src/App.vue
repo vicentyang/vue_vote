@@ -1,25 +1,28 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <NavBar></NavBar>
-    <div v-for="item in designData.data">
+    <nav-bar></nav-bar>
+    <home></home>
+    <!-- <div v-for="item in designData.data">
         <a v-bind:href="item.url">{{item.name}}</a>
-    </div>
-    <router-view></router-view>
+    </div> -->
+    <!-- <router-view></router-view> -->
   </div>
 </template>
 
 <script>
 import designData from '../static/data/design.json';
-import emoji from './components/Emoji';
-import NavBar from './components/NavBar';
+// import emoji from './components/Emoji';
+import navBar from './components/NavBar';
+import Home from './components/Home';
 
 console.log('data', designData);
 export default {
   name: 'app',
   components: {
-    emoji,
-    NavBar,
+    // emoji,
+    navBar,
+    Home,
   },
   data () {
     return {
@@ -36,6 +39,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  /*margin-top: 60px;*/
 }
 </style>

@@ -8,7 +8,7 @@
             <span class ="icon-bar"></span>
           </button>
           <a v-link="'/'" class ="navbar-brand">
-            <span class ={"triangles animated " + this.state.ajaxAnimationClass}>
+            <span class ="triangles animated ">
               <div class ="tri invert"></div>
               <div class ="tri invert"></div>
               <div class ="tri"></div>
@@ -20,15 +20,15 @@
               <div class ="tri invert"></div>
             </span>
             NEF
-            <span class ="badge badge-up badge-danger">{this.state.onlineUsers}</span>
+            <span class ="badge badge-up badge-danger">110</span>
           </a>
         </div>
         <div id="navbar" class ="navbar-collapse collapse">
           <form ref="searchForm" class ="navbar-form navbar-left animated" onSubmit={this.handleSubmit.bind(this)}>
             <div class ="input-group">
-              <input type="text" class ="form-control" placeholder={this.state.totalCharacters + " characters"} value={this.state.searchQuery} onChange={NavbarActions.updateSearchQuery} />
+              <input type="text" class ="form-control"/>
               <span class ="input-group-btn">
-                <button class ="btn btn-default" onClick={this.handleSubmit.bind(this)}><span class ="glyphicon glyphicon-search"></span></button>
+                <button class ="btn btn-default"><span class ="glyphicon glyphicon-search"></span></button>
               </span>
             </div>
           </form>
