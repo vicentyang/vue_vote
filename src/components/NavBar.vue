@@ -7,7 +7,7 @@
             <span class ="icon-bar"></span>
             <span class ="icon-bar"></span>
           </button>
-          <a v-link="'/'" class ="navbar-brand">
+          <a href="'/'" class ="navbar-brand">
             <span class ="triangles animated ">
               <div class ="tri invert"></div>
               <div class ="tri invert"></div>
@@ -33,82 +33,82 @@
             </div>
           </form>
           <ul class ="nav navbar-nav">
-            <li><a v-link="'/'">Home</a></li>
-            <li><a v-link="'/stats'">Stats</a></li>
+            <li><a href="'/'">Home</a></li>
+            <li><a href="'/stats'">Stats</a></li>
             <li class ="dropdown">
               <a href="#" class ="dropdown-toggle" data-toggle="dropdown">Top 100 <span class ="caret"></span></a>
               <ul class ="dropdown-menu">
-                <li><a v-link="'/top'">Top Overall</a></li>
+                <li><a href="'/top'">Top Overall</a></li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/top/caldari'">Caldari</a>
+                  <a href="'/top/caldari'">Caldari</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/top/caldari/achura'">Achura</a></li>
-                    <li><a v-link="'/top/caldari/civire'">Civire</a></li>
-                    <li><a v-link="'/top/caldari/deteis'">Deteis</a></li>
+                    <li><a href="'/top/caldari/achura'">Achura</a></li>
+                    <li><a href="'/top/caldari/civire'">Civire</a></li>
+                    <li><a href="'/top/caldari/deteis'">Deteis</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/top/gallente'">Gallente</a>
+                  <a href="'/top/gallente'">Gallente</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/top/gallente/gallente'">Gallente</a></li>
-                    <li><a v-link="'/top/gallente/intaki'">Intaki</a></li>
-                    <li><a v-link="'/top/gallente/jin-mei'">Jin-Mei</a></li>
+                    <li><a href="'/top/gallente/gallente'">Gallente</a></li>
+                    <li><a href="'/top/gallente/intaki'">Intaki</a></li>
+                    <li><a href="'/top/gallente/jin-mei'">Jin-Mei</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/top/minmatar'">Minmatar</a>
+                  <a href="'/top/minmatar'">Minmatar</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/top/minmatar/brutor'">Brutor</a></li>
-                    <li><a v-link="'/top/minmatar/sebiestor'">Sebiestor</a></li>
-                    <li><a v-link="'/top/minmatar/vherokior'">Vherokior</a></li>
+                    <li><a href="'/top/minmatar/brutor'">Brutor</a></li>
+                    <li><a href="'/top/minmatar/sebiestor'">Sebiestor</a></li>
+                    <li><a href="'/top/minmatar/vherokior'">Vherokior</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/top/amarr'">Amarr</a>
+                  <a href="'/top/amarr'">Amarr</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/top/amarr/amarr'">Amarr</a></li>
-                    <li><a v-link="'/top/amarr/ni-kunni'">Ni-Kunni</a></li>
-                    <li><a v-link="'/top/amarr/khanid'">Khanid</a></li>
+                    <li><a href="'/top/amarr/amarr'">Amarr</a></li>
+                    <li><a href="'/top/amarr/ni-kunni'">Ni-Kunni</a></li>
+                    <li><a href="'/top/amarr/khanid'">Khanid</a></li>
                   </ul>
                 </li>
                 <li class ="divider"></li>
-                <li><a v-link="'/shame'">Hall of Shame</a></li>
+                <li><a href="'/shame'">Hall of Shame</a></li>
               </ul>
             </li>
             <li class ="dropdown">
               <a href="#" class ="dropdown-toggle" data-toggle="dropdown">Female <span class ="caret"></span></a>
               <ul class ="dropdown-menu">
-                <li><a v-link="'/female'">All</a></li>
+                <li><a href="'/female'">All</a></li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/female/caldari'">Caldari</a>
+                  <a href="'/female/caldari'">Caldari</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/female/caldari/achura'">Achura</a></li>
-                    <li><a v-link="'/female/caldari/civire/'">Civire</a></li>
-                    <li><a v-link="'/female/caldari/deteis'">Deteis</a></li>
+                    <li><a href="'/female/caldari/achura'">Achura</a></li>
+                    <li><a href="'/female/caldari/civire/'">Civire</a></li>
+                    <li><a href="'/female/caldari/deteis'">Deteis</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/female/gallente'">Gallente</a>
+                  <a href="'/female/gallente'">Gallente</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/female/gallente/gallente'">Gallente</a></li>
-                    <li><a v-link="'/female/gallente/intaki'">Intaki</a></li>
-                    <li><a v-link="'/female/gallente/jin-mei'">Jin-Mei</a></li>
+                    <li><a href="'/female/gallente/gallente'">Gallente</a></li>
+                    <li><a href="'/female/gallente/intaki'">Intaki</a></li>
+                    <li><a href="'/female/gallente/jin-mei'">Jin-Mei</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/female/minmatar'">Minmatar</a>
+                  <a href="'/female/minmatar'">Minmatar</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/female/minmatar/brutor'">Brutor</a></li>
-                    <li><a v-link="'/female/minmatar/sebiestor'">Sebiestor</a></li>
-                    <li><a v-link="'/female/minmatar/vherokior'">Vherokior</a></li>
+                    <li><a href="'/female/minmatar/brutor'">Brutor</a></li>
+                    <li><a href="'/female/minmatar/sebiestor'">Sebiestor</a></li>
+                    <li><a href="'/female/minmatar/vherokior'">Vherokior</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/female/amarr'">Amarr</a>
+                  <a href="'/female/amarr'">Amarr</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/female/amarr/amarr'">Amarr</a></li>
-                    <li><a v-link="'/female/amarr/ni-kunni'">Ni-Kunni</a></li>
-                    <li><a v-link="'/female/amarr/khanid'">Khanid</a></li>
+                    <li><a href="'/female/amarr/amarr'">Amarr</a></li>
+                    <li><a href="'/female/amarr/ni-kunni'">Ni-Kunni</a></li>
+                    <li><a href="'/female/amarr/khanid'">Khanid</a></li>
                   </ul>
                 </li>
               </ul>
@@ -116,42 +116,42 @@
             <li class ="dropdown">
               <a href="#" class ="dropdown-toggle" data-toggle="dropdown">Male <span class ="caret"></span></a>
               <ul class ="dropdown-menu">
-                <li><a v-link="'/male'">All</a></li>
+                <li><a href="'/male'">All</a></li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/male/caldari'">Caldari</a>
+                  <a href="'/male/caldari'">Caldari</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/male/caldari/achura'">Achura</a></li>
-                    <li><a v-link="'/male/caldari/civire'">Civire</a></li>
-                    <li><a v-link="'/male/caldari/deteis'">Deteis</a></li>
+                    <li><a href="'/male/caldari/achura'">Achura</a></li>
+                    <li><a href="'/male/caldari/civire'">Civire</a></li>
+                    <li><a href="'/male/caldari/deteis'">Deteis</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/male/gallente'">Gallente</a>
+                  <a href="'/male/gallente'">Gallente</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/male/gallente/gallente'">Gallente</a></li>
-                    <li><a v-link="'/male/gallente/intaki'">Intaki</a></li>
-                    <li><a v-link="'/male/gallente/jin-mei'">Jin-Mei</a></li>
+                    <li><a href="'/male/gallente/gallente'">Gallente</a></li>
+                    <li><a href="'/male/gallente/intaki'">Intaki</a></li>
+                    <li><a href="'/male/gallente/jin-mei'">Jin-Mei</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/male/minmatar'">Minmatar</a>
+                  <a href="'/male/minmatar'">Minmatar</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/male/minmatar/brutor'">Brutor</a></li>
-                    <li><a v-link="'/male/minmatar/sebiestor'">Sebiestor</a></li>
-                    <li><a v-link="'/male/minmatar/vherokior'">Vherokior</a></li>
+                    <li><a href="'/male/minmatar/brutor'">Brutor</a></li>
+                    <li><a href="'/male/minmatar/sebiestor'">Sebiestor</a></li>
+                    <li><a href="'/male/minmatar/vherokior'">Vherokior</a></li>
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <a v-link="'/male/amarr'">Amarr</a>
+                  <a href="'/male/amarr'">Amarr</a>
                   <ul class ="dropdown-menu">
-                    <li><a v-link="'/male/amarr/amarr'">Amarr</a></li>
-                    <li><a v-link="'/male/amarr/ni-kunni'">Ni-Kunni</a></li>
-                    <li><a v-link="'/male/amarr/khanid'">Khanid</a></li>
+                    <li><a href="'/male/amarr/amarr'">Amarr</a></li>
+                    <li><a href="'/male/amarr/ni-kunni'">Ni-Kunni</a></li>
+                    <li><a href="'/male/amarr/khanid'">Khanid</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><a v-link="'/add'">Add</a></li>
+            <li><a href="'/add'">Add</a></li>
           </ul>
         </div>
       </nav>

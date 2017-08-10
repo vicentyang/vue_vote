@@ -1,15 +1,22 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import Hello from '@/components/Hello'
+import emoji from '../components/Emoji'
+import Home from '../components/Home';
+
 
 Vue.use(Router)
 
-export default new Router({
-  routes: [
+export default [
     {
       path: '/',
-      name: 'Hello',
-      component: Hello
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/emoji',
+      name: 'emoji',
+      component: emoji
     }
   ]
-})
+

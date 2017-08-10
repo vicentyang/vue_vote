@@ -2,11 +2,11 @@
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
     <nav-bar></nav-bar>
-    <home></home>
+    <!-- <home></home> -->
     <!-- <div v-for="item in designData.data">
         <a v-bind:href="item.url">{{item.name}}</a>
     </div> -->
-    <!-- <router-view></router-view> -->
+     <router-view></router-view>
   </div>
 </template>
 
