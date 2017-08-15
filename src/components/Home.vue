@@ -4,7 +4,7 @@
         <div class='row'>
             <div v-for="(character, index) in characterList" :class="index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'">
                 <div class='thumbnail fadeInUp animated'>
-                    <!-- <img @click = "showDetail" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" /> -->
+                     <img @click = "showDetail" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" />
                     <div class='caption text-center'>
                         <ul class='list-inline'>
                             <li>
@@ -30,6 +30,7 @@
     </div>
 </template>
 <script type="text/javascript">
+import {first, without, findWhere} from 'underscore';
 import { mapGetters, mapActions } from 'vuex'
 export default {
     // name:'Home',
@@ -59,9 +60,12 @@ export default {
         showDetail() {
             console.log('showDetail');
         },
+        vote() {
+
+        }
     },
     mounted: function () {
-
+        debugger
         this.getTwoCharacters()
     }
 }

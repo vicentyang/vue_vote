@@ -1,8 +1,8 @@
 /*
 * @Author: vicent
 * @Date:   2017-08-09 17:35:27
- * @Last Modified by:   vicent
- * @Last Modified time: 2017-08-10 11:20:46
+ * @Last Modified by: vicent
+ * @Last Modified time: 2017-08-12 17:04:28
 */
 
 'use strict';
@@ -69,4 +69,19 @@ app.get('/api/characters', function(req, res, next) {
           });
         });
     });
+});
+
+// getCharacterDetail
+app.get('/api/characters/:id', function(req, res, next) {
+  var id = req.params.id;
+
+  Character.findOne({ characterId: id }, function(err, character) {
+    if (err) return next(err);
+
+    if (!character) {
+      return res.status(404).send({ message: 'Character not found.' });
+    }
+
+    res.send(character);
+  });
 });
