@@ -9,7 +9,8 @@
 
 let state = {
     characterList: [],
-    characterDetail: {}
+    characterDetail: {},
+    topCharacterList: []
 };
 
 export default state;

@@ -52,9 +52,16 @@ export default {
             'getCharacterDetail'
         ])
     },
+    updated() {
+        console.log('updated');
+    },
     mounted: function() {
         this.getCharacterDetail(this.$route.params.id)
         console.log('data', this.$route.params.id);
+        document.body.background = './static/heroImg/' +  Math.floor(Math.random() * 200) + '.jpg'
+    },
+    beforeDestroy() {
+        document.body.background = ''
     }
 //   methou
 }

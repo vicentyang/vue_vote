@@ -7,6 +7,7 @@
         <a v-bind:href="item.url">{{item.name}}</a>
     </div> -->
      <router-view></router-view>
+     <foot></foot>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ import designData from '../static/data/design.json';
 // import emoji from './components/Emoji';
 import navBar from './components/NavBar';
 import Home from './components/Home';
+import Foot from './components/Foot';
 
 console.log('data', designData);
 export default {
@@ -23,6 +25,7 @@ export default {
     // emoji,
     navBar,
     Home,
+    Foot,
   },
   data () {
     return {

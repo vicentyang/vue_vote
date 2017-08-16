@@ -4,7 +4,10 @@
         <div class='row'>
             <div v-for="(character, index) in characterList" :class="index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'">
                 <div class='thumbnail fadeInUp animated'>
-                     <img @click = "showDetail" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" />
+                       <!-- <img @click = "vote(character)" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" /> -->
+
+                    <img class='thumb-md' :src="'./static/smallHeroImg/hero' + Math.floor(Math.random() * 69) + '.jpg'" />
+
                     <div class='caption text-center'>
                         <ul class='list-inline'>
                             <li>
@@ -52,7 +55,8 @@ export default {
 
     methods: {
         ...mapActions([
-            'getTwoCharacters'
+            'getTwoCharacters',
+            'sendVote'
         ]),
         showHome() {
             console.log('Home.vue>>>24', 'showHome');
@@ -60,13 +64,27 @@ export default {
         showDetail() {
             console.log('showDetail');
         },
-        vote() {
+        vote(character) {
+
+            console.log('vote', character);
+            var winner = character.characterId;
+            var loser = first(without(this.characterList, findWhere(this.characterList, { characterId: winner }))).characterId;
+            // HomeActions.vote(winner, loser);
+            this.sendVote({winner, loser})
 
         }
     },
     mounted: function () {
-        debugger
+
         this.getTwoCharacters()
     }
 }
 </script>
+
+<style scoped>
+.fixHW {
+    width: 512px;
+    height: 512px;
+}
+</style>
+

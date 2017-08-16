@@ -4,9 +4,9 @@
             <div class='list-group-item animated fadeIn'>
                 <div v-for="(character, index) in characterList" class='media'>
                     <span class='position pull-left'>{{index + 1}}</span>
-                    <div class='pull-left thumb-lg'>
-                        <img class='media-object' :src="'http://image.eveonline.com/Character/' + character.characterId + '_128.jpg'" />
-                    </div>
+                    <!-- <div class='pull-left thumb-lg'>
+                         <img class='media-object' :src="'http://image.eveonline.com/Character/' + character.characterId + '_128.jpg'" />
+                    </div> -->
                     <div class='media-body'>
                         <h4 class='media-heading'>
                             <!-- <Link to={ '/characters/' + character.characterId}>{character.name}</Link> -->
