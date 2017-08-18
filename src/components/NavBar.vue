@@ -34,7 +34,11 @@
           </form>
           <ul class ="nav navbar-nav">
             <li><router-link to='/'>Home</router-link></li>
-            <li><router-link to='/stats'>Stats</router-link></li>
+            <li><router-link to='/summoner'>summoner</router-link></li>
+            <li><router-link to='/item'>item</router-link></li>
+            <li><router-link to='/ming'>ming</router-link></li>
+            <li><router-link to='/hero'>hero</router-link></li>
+            <!-- <li><router-link to='/stats'>Stats</router-link></li> -->
             <li class ="dropdown">
               <router-link to="#" class ="dropdown-toggle" data-toggle="dropdown">Top 100 <span class ="caret"></span></router-link>
               <ul class ="dropdown-menu">
@@ -64,11 +68,11 @@
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <router-link to='/top/router-linkmarr'>Amarr</router-link>
+                  <router-link to='/top/marr'>Amarr</router-link>
                   <ul class ="dropdown-menu">
-                    <li><router-link to='/top/router-linkmarr/router-linkmarr'>Amarr</router-link></li>
-                    <li><router-link to='/top/router-linkmarr/ni-kunni'>Ni-Kunni</router-link></li>
-                    <li><router-link to='/top/router-linkmarr/khanid'>Khanid</router-link></li>
+                    <li><router-link to='/top/marr/marr'>Amarr</router-link></li>
+                    <li><router-link to='/top/marr/ni-kunni'>Ni-Kunni</router-link></li>
+                    <li><router-link to='/top/marr/khanid'>Khanid</router-link></li>
                   </ul>
                 </li>
                 <li class ="divider"></li>
@@ -82,7 +86,7 @@
                 <li class ="dropdown-submenu">
                   <router-link to='/female/caldari'>Caldari</router-link>
                   <ul class ="dropdown-menu">
-                    <li><router-link to='/female/caldari/router-linkchura'>Achura</router-link></li>
+                    <li><router-link to='/female/caldari/chura'>Achura</router-link></li>
                     <li><router-link to='/female/caldari/civire/'>Civire</router-link></li>
                     <li><router-link to='/female/caldari/deteis'>Deteis</router-link></li>
                   </ul>
@@ -104,11 +108,11 @@
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <router-link to='/female/router-linkmarr'>Amarr</router-link>
+                  <router-link to='/female/marr'>Amarr</router-link>
                   <ul class ="dropdown-menu">
-                    <li><router-link to='/female/router-linkmarr/router-linkmarr'>Amarr</router-link></li>
-                    <li><router-link to='/female/router-linkmarr/ni-kunni'>Ni-Kunni</router-link></li>
-                    <li><router-link to='/female/router-linkmarr/khanid'>Khanid</router-link></li>
+                    <li><router-link to='/female/marr/marr'>Amarr</router-link></li>
+                    <li><router-link to='/female/marr/ni-kunni'>Ni-Kunni</router-link></li>
+                    <li><router-link to='/female/marr/khanid'>Khanid</router-link></li>
                   </ul>
                 </li>
               </ul>
@@ -120,7 +124,7 @@
                 <li class ="dropdown-submenu">
                   <router-link to='/male/caldari'>Caldari</router-link>
                   <ul class ="dropdown-menu">
-                    <li><router-link to='/male/caldari/router-linkchura'>Achura</router-link></li>
+                    <li><router-link to='/male/caldari/chura'>Achura</router-link></li>
                     <li><router-link to='/male/caldari/civire'>Civire</router-link></li>
                     <li><router-link to='/male/caldari/deteis'>Deteis</router-link></li>
                   </ul>
@@ -142,16 +146,16 @@
                   </ul>
                 </li>
                 <li class ="dropdown-submenu">
-                  <router-link to='/male/router-linkmarr'>Amarr</router-link>
+                  <router-link to='/male/marr'>Amarr</router-link>
                   <ul class ="dropdown-menu">
-                    <li><router-link to='/male/router-linkmarr/router-linkmarr'>Amarr</router-link></li>
-                    <li><router-link to='/male/router-linkmarr/ni-kunni'>Ni-Kunni</router-link></li>
-                    <li><router-link to='/male/router-linkmarr/khanid'>Khanid</router-link></li>
+                    <li><router-link to='/male/marr/marr'>Amarr</router-link></li>
+                    <li><router-link to='/male/marr/ni-kunni'>Ni-Kunni</router-link></li>
+                    <li><router-link to='/male/marr/khanid'>Khanid</router-link></li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><router-link to='/router-linkdd'>Add</router-link></li>
+            <!-- <li><router-link to='/add'>Add</router-link></li> -->
             <li><router-link to='/emoji'>Eggs</router-link></li>
           </ul>
         </div>

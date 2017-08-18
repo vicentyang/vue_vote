@@ -6,7 +6,7 @@
                 <div class='thumbnail fadeInUp animated'>
                        <!-- <img @click = "vote(character)" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" /> -->
 
-                    <img class='thumb-md' :src="'./static/smallHeroImg/hero' + Math.floor(Math.random() * 69) + '.jpg'" />
+                    <!-- <img @click = "vote(character)" class='thumb-md' :src="'./static/smallHeroImg/hero' + character.randomHeroId + '.jpg'" /> -->
 
                     <div class='caption text-center'>
                         <ul class='list-inline'>
@@ -20,8 +20,12 @@
                                 <strong>{{character.name}}</strong>
 
                             </router-link> -->
-                            <router-link :to="'/character/' + character.characterId">
+                            <!-- <router-link :to="'/character/' + character.characterId">
                                 <strong>{{character.name}}</strong>
+
+                            </router-link> -->
+                            <router-link :to="{name: 'character', params:{id: character.characterId}, query: {randomHeroId:character.randomHeroId}}">
+                                <strong>{{character.randomHeroId}}</strong>
 
                             </router-link>
                         </h4>

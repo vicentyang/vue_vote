@@ -1,13 +1,16 @@
 <template>
   <div id="app">
     <!-- <img src="./assets/logo.png"> -->
-    <nav-bar></nav-bar>
     <!-- <home></home> -->
     <!-- <div v-for="item in designData.data">
         <a v-bind:href="item.url">{{item.name}}</a>
     </div> -->
-     <router-view></router-view>
-     <foot></foot>
+
+      <nav-bar></nav-bar>
+      <router-view></router-view>
+      <foot></foot>
+
+     <!-- <test></test> -->
   </div>
 </template>
 
@@ -17,6 +20,7 @@ import designData from '../static/data/design.json';
 import navBar from './components/NavBar';
 import Home from './components/Home';
 import Foot from './components/Foot';
+import test from './components/test';
 
 console.log('data', designData);
 export default {
@@ -26,6 +30,7 @@ export default {
     navBar,
     Home,
     Foot,
+    test
   },
   data () {
     return {

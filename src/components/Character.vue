@@ -1,9 +1,11 @@
 <template>
     <div class='container'>
         <div class='profile-img'>
-            <a ref='magnificPopup' class='magnific-popup' :href="'https://image.eveonline.com/Character/' + characterDetail.characterId + '_1024.jpg'">
-                <img :src="'https://image.eveonline.com/Character/' + characterDetail.characterId + '_256.jpg'" />
+            <!-- <a ref='magnificPopup' class='magnific-popup' :href="'https://image.eveonline.com/Character/' + characterDetail.characterId + '_1024.jpg'"> -->
+                <!-- <img :src="'https://image.eveonline.com/Character/' + characterDetail.characterId + '_256.jpg'" /> -->
+                 <img :src="'./static/smallHeroImg/hero' + randomHeroId + '.jpg'" />
             </a>
+            <!-- {{randomHeroId}} -->
         </div>
         <div class='profile-info clearfix'>
             <h2>
@@ -39,7 +41,7 @@ import { mapGetters, mapActions } from 'vuex'
 export default {
   data() {
       return {
-        // characterDetail:
+         randomHeroId: 1
       }
   },
   computed: {
@@ -50,18 +52,32 @@ export default {
     methods: {
         ...mapActions([
             'getCharacterDetail'
-        ])
+        ]),
+
+        freshData() {
+
+            this.getCharacterDetail(this.$route.params.id)
+            this.randomHeroId = this.$route.query.randomHeroId
+            console.log('$route', this.$route);
+            document.body.background = './static/heroImg/' +  Math.floor(Math.random() * 200) + '.jpg'
+        },
     },
     updated() {
         console.log('updated');
     },
     mounted: function() {
-        this.getCharacterDetail(this.$route.params.id)
-        console.log('data', this.$route.params.id);
-        document.body.background = './static/heroImg/' +  Math.floor(Math.random() * 200) + '.jpg'
+        this.freshData()
     },
     beforeDestroy() {
         document.body.background = ''
+        // document
+
+    },
+    beforeRouteUpdate(to, from, next) {
+        this.freshData()
+        console.log('to', to);
+        console.log('from', from);
+        console.log('next', next);
     }
 //   methou
 }
