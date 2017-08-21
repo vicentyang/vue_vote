@@ -6,7 +6,7 @@
                 <div class='thumbnail fadeInUp animated'>
                        <!-- <img @click = "vote(character)" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" /> -->
 
-                     <img @click = "vote(character)" class='thumb-md' :src="'./static/hero/' + heroList.data[character.randomHeroId].ename + '.jpg'" />
+                     <img class='fixHW thumb-md' @click = "vote(character)" :src="'./static/hero/' + heroList.data[character.randomHeroId].ename + '.jpg'" />
 
                     <div class='caption text-center'>
                         <ul class='list-inline'>
@@ -90,8 +90,8 @@ export default {
 
 <style scoped>
 .fixHW {
-    width: 512px;
-    height: 512px;
+    width: 150px;
+    height: 150px;
 }
 </style>
 

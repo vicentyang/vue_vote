@@ -5,7 +5,7 @@
     <li v-for="(ming, index) in mingList.data">
            <img class='thumb-md' :src="'./static/ming/' + ming.ming_id + '.png'" />
         <!-- <span>{{ming.ming_type}}</span> -->
-        <li><strong>111</strong></li>
+        <!-- <li><strong>111</strong></li> -->
         <!-- li 标签有问题么  -->
         <!-- <li>111</li> -->
     </li>

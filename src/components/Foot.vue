@@ -13,8 +13,7 @@
                         <strong>MongoDB</strong> and
                         <strong>Vue</strong> with
                         <strong>Vuex</strong> architecture.</p>
-                    <p>You may view the
-                        <a href='https://github.com/vicentyang/vue_vote'>Source Code</a> behind this project on GitHub.</p>
+                    <!-- <p>You may view the<a href='https://github.com/vicentyang/vue_vote'>Source Code</a> behind this project on GitHub.</p> -->
                     <p>© 2017 Vicent Yang.</p>
                 </div>
                 <div class='col-sm-7 hidden-xs'>

@@ -5,7 +5,7 @@
             <div class='profile-img'>
                 <!-- <a ref='magnificPopup' class='magnific-popup' :href="'https://image.eveonline.com/Character/' + characterDetail.characterId + '_1024.jpg'"> -->
                 <!-- <img :src="'https://image.eveonline.com/Character/' + characterDetail.characterId + '_256.jpg'" /> -->
-                <img :src="'./static/smallHeroImg/hero' + randomHeroId + '.jpg'" />
+                <img class="fixImg" :src="'./static/hero/' + heroList.data[randomHeroId].ename + '.jpg'" />
                 </a>
                 <!-- {{randomHeroId}} -->
             </div>
@@ -40,11 +40,13 @@
 
 <<script>
 import { mapGetters, mapActions } from 'vuex'
+import heroList from '../../static/data/heroList.json'
 
 export default {
   data() {
       return {
-         randomHeroId: 1
+        randomHeroId: 1,
+        heroList
       }
   },
   computed: {
@@ -65,7 +67,7 @@ export default {
             // document.getElementById('character-bg').style.backgroundImage = "url('./static/heroImg/' +  Math.floor(Math.random() * 200) + '.jpg')"
             // console.dir(document.getElementById('character-bg'))
             var img = './static/heroImg/' +  Math.floor(Math.random() * 200) + '.jpg'
-            document.body.style.backgroundImage = 'url(img)'
+            document.body.background = img
             document.body.style.backgroundSize = "100%"
         },
     },
@@ -74,6 +76,7 @@ export default {
     },
     mounted: function() {
         this.freshData()
+        this.heroList = heroList
     },
     beforeDestroy() {
         document.body.background = ''
@@ -94,4 +97,11 @@ export default {
 /*#character-bg {
     background-image: url('')
 }*/
+.fixImg {
+    width: 100%;
+    height: 100%;
+}
+.container {
+    color:black;
+}
 </style>

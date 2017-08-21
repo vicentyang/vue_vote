@@ -9,7 +9,7 @@
             </li>-->
             <ul class='list-inline'>
                 <li> <strong>{{summoner.summoner_name}}</strong> </li>
-                <li> <strong>{{summoner.summoner_name}}</strong> </li>
+                <!-- <li> <strong>{{summoner.summoner_name}}</strong> </li> -->
             </ul>
 
             <!-- li 标签有问题么  -->
