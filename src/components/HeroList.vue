@@ -2,11 +2,14 @@
     <ul class='list-inline'>
         <!-- {leaderboardCharacters} -->
         <li v-for="(hero, index) in heroList.data">
-             <img class='thumb-md' :src="'./static/hero/' + hero.ename + '.jpg'" />
             <!-- <span>{{ming.ming_type}}</span> -->
-            <li>
-                <strong>111</strong>
-            </li>
+            <div class='thumbnail fadeInUp animated'>
+             <img class='thumb-md' :src="'./static/hero/' + hero.ename + '.jpg'" />
+            <ul class='list-inline'>
+                <li> <strong>{{hero.cname}}</strong> </li>
+            </ul>
+
+                    </div>
             <!-- li 标签有问题么  -->
             <!-- <li>111</li> -->
         </li>

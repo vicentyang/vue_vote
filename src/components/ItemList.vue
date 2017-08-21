@@ -2,9 +2,10 @@
     <ul class='list-inline'>
                             <!-- {leaderboardCharacters} -->
         <li v-for="(item, index) in itemList.data">
+            <div class='thumbnail fadeInUp'>
              <img class='thumb-md' :src="'./static/item/' + item.item_id + '.jpg'" />
-            <!-- <span>{{ming.ming_type}}</span> -->
-            <li><strong>111</strong></li>
+             <span>{{item.item_name}}</span>
+            </div>
             <!-- li 标签有问题么  -->
             <!-- <li>111</li> -->
         </li>

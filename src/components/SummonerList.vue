@@ -2,11 +2,16 @@
     <ul class='list-inline'>
         <!-- {leaderboardCharacters} -->
         <li v-for="(summoner, index) in summonerList.data">
-             <img class='thumb-md' :src="'./static/summoner/' + summoner.summoner_id + '.jpg'" />
+             <img class='thumb-md border' :src="'./static/summoner/' + summoner.summoner_id + '.jpg'" />
             <!-- <span>{{ming.ming_type}}</span> -->
-            <li>
+            <!--<li>
                 <strong>111</strong>
-            </li>
+            </li>-->
+            <ul class='list-inline'>
+                <li> <strong>{{summoner.summoner_name}}</strong> </li>
+                <li> <strong>{{summoner.summoner_name}}</strong> </li>
+            </ul>
+
             <!-- li 标签有问题么  -->
             <!-- <li>111</li> -->
         </li>
@@ -29,6 +34,9 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+.border {
+    border-radius: 50px;
+    border:2px solid rebeccapurple;
+}
 </style>

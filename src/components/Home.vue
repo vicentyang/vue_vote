@@ -6,14 +6,14 @@
                 <div class='thumbnail fadeInUp animated'>
                        <!-- <img @click = "vote(character)" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" /> -->
 
-                    <!-- <img @click = "vote(character)" class='thumb-md' :src="'./static/smallHeroImg/hero' + character.randomHeroId + '.jpg'" /> -->
+                     <img @click = "vote(character)" class='thumb-md' :src="'./static/hero/' + heroList.data[character.randomHeroId].ename + '.jpg'" />
 
                     <div class='caption text-center'>
                         <ul class='list-inline'>
                             <li>
-                                <strong>Race:</strong> {{character.race}}</li>
+                                <strong>Race:</strong> {{heroList.data[character.randomHeroId].cname}}</li>
                             <li>
-                                <strong>Bloodline:</strong> {{character.bloodline}}</li>
+                                <strong>Bloodline:</strong> {{heroList.data[character.randomHeroId].title}}</li>
                         </ul>
                         <h4>
                             <!-- <router-link to="/emoji">
@@ -38,7 +38,9 @@
 </template>
 <script type="text/javascript">
 import {first, without, findWhere} from 'underscore';
-import { mapGetters, mapActions } from 'vuex'
+import { mapGetters, mapActions } from 'vuex';
+import heroList from '../../static/data/heroList.json'
+
 export default {
     // name:'Home',
     props: [
@@ -47,6 +49,7 @@ export default {
 
     data: function () {
         return {
+            heroList
             // characterList: this.$store.getters.characterList
         }
     },
