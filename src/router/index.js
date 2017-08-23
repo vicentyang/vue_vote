@@ -38,12 +38,16 @@ export default [
     {
       path: '/hero',
       name: 'hero',
-      component: HeroList
+      component: HeroList,
+      children: [
+        {path:':heroType', component: HeroList}
+      ]
     },
     {
       path: '/summoner',
       name: 'summoner',
-      component: SummonerList
+      component: SummonerList,
+
     },
     {
       path: '/character/:id',

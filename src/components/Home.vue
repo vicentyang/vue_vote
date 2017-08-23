@@ -3,19 +3,19 @@
         <h3 class='text-center'>Click on the portrait. Select your favorite.</h3>
         <div class='row'>
             <div v-for="(character, index) in characterList" :class="index === 0 ? 'col-xs-6 col-sm-6 col-md-5 col-md-offset-1' : 'col-xs-6 col-sm-6 col-md-5'">
-                <div class='thumbnail fadeInUp animated'>
+                <div class='fix-heroitem fadeInUp animated'>
                        <!-- <img @click = "vote(character)" :src="'http://image.eveonline.com/Character/' + character.characterId + '_512.jpg'" /> -->
 
-                     <img class='fixHW thumb-md' @click = "vote(character)" :src="'./static/hero/' + heroList.data[character.randomHeroId].ename + '.jpg'" />
+                     <img class='fixHW border' @click = "vote(character)" :src="'./static/hero/' + character.ename + '.jpg'" />
 
                     <div class='caption text-center'>
                         <ul class='list-inline'>
                             <li>
-                                <strong>Race:</strong> {{heroList.data[character.randomHeroId].cname}}</li>
+                                <strong>定位:</strong> {{heroType[character.hero_type]}}</li>
                             <li>
-                                <strong>Bloodline:</strong> {{heroList.data[character.randomHeroId].title}}</li>
+                                <strong>厉害一点的名字:</strong> {{character.title}}</li>
                         </ul>
-                        <h4>
+                        <h4 class="text-center">
                             <!-- <router-link to="/emoji">
                                 <strong>{{character.name}}</strong>
 
@@ -24,8 +24,8 @@
                                 <strong>{{character.name}}</strong>
 
                             </router-link> -->
-                            <router-link :to="{name: 'character', params:{id: character.characterId}, query: {randomHeroId:character.randomHeroId}}">
-                                <strong>{{character.randomHeroId}}</strong>
+                            <router-link :to="{name: 'character', params:{id: character.characterId}, query: {ename:character.ename }}">
+                                <strong>{{character.cname}}</strong>
 
                             </router-link>
                         </h4>
@@ -42,6 +42,7 @@ import { mapGetters, mapActions } from 'vuex';
 import heroList from '../../static/data/heroList.json'
 
 export default {
+
     // name:'Home',
     props: [
 
@@ -49,7 +50,7 @@ export default {
 
     data: function () {
         return {
-            heroList
+             heroType: {}
             // characterList: this.$store.getters.characterList
         }
     },
@@ -81,9 +82,21 @@ export default {
 
         }
     },
+    beforeDestroy() {
+        document.body.background = ''
+        // document
+
+    },
     mounted: function () {
 
         this.getTwoCharacters()
+        console.log('characterList', this.characterList);
+        this.heroType = heroList.typeName
+
+         var img = './static/heroImg/83.jpg'
+            document.body.background = img
+            document.body.style.backgroundSize = "100%"
+
     }
 }
 </script>
@@ -92,6 +105,22 @@ export default {
 .fixHW {
     width: 150px;
     height: 150px;
+}
+.text-center, a{
+    color: white
+}
+/* a {
+    color: wheat
+} */
+.border {
+    border-radius: 150px;
+}
+.fix-heroitem {
+    background-color: rgba(12, 12, 12, 0.44)
+}
+.fix-heroitem:hover {
+    cursor: pointer;
+    color:blue
 }
 </style>
 

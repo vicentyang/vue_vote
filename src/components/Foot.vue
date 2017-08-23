@@ -22,10 +22,10 @@
                     <ul class='list-inline'>
                         <!-- {leaderboardCharacters} -->
                         <li v-for="(character, index) in top5CharacterList" :key="character.characterId">
-                             <router-link :to="'/character/' + character.characterId">
+                             <router-link :to="{name: 'character', params:{id: character.characterId}, query: {ename:character.ename }}">
                             <!-- <router-link :to="{name: 'character', params:{id: character.characterId}, query: {randomHeroId:character.randomHeroId}}"> -->
                                 <!-- <img class='thumb-md' :src="'http://image.eveonline.com/Character/' + character.characterId + '_128.jpg'" /> -->
-                                 <img class='thumb-md' :src="'./static/smallHeroImg/hero' + character.randomHeroId + '.jpg'" />
+                                 <img class='thumb-md' :src="'./static/hero/' + character.ename + '.jpg'" />
 
                             </router-link>
                         </li>

@@ -3949,7 +3949,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: rgba(3, 169, 244, 0.45);
 }
 .nav > li.disabled > a {
   color: #777777;
@@ -7581,8 +7581,8 @@ label {
   position: relative;
   margin-bottom: 20px;
   float: left;
-  width: 256px;
-  height: 256px;
+  width: 100px;
+  height: 100px;
   box-shadow: 0 2px 25px rgba(0, 0, 0, 0.25);
 }
 .profile-info {

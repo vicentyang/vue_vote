@@ -337,7 +337,7 @@
         "ming_des": "<p>法术防御力+5.4</p>"
     },
     {
-        "ming_id": "3403",
+        "ming_id": "3402",
         "ming_type": "blue",
         "ming_grade": "4",
         "ming_name": "奇袭",
@@ -512,7 +512,7 @@
         "ming_des": "<p>物理攻击力+0.7</p><p>攻速加成+0.2%</p>"
     },
     {
-        "ming_id": "1203",
+        "ming_id": "1204",
         "ming_type": "red",
         "ming_grade": "2",
         "ming_name": "震击",

@@ -8,7 +8,7 @@
 
       <nav-bar></nav-bar>
       <router-view></router-view>
-      <!-- <foot></foot> -->
+      <foot></foot>
 
      <!-- <test></test> -->
   </div>
