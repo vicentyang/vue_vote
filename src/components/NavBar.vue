@@ -26,7 +26,7 @@
         <div id="navbar" class ="navbar-collapse collapse">
           <form ref="searchForm" class ="navbar-form navbar-left animated" onSubmit={this.handleSubmit.bind(this)}>
             <div class ="input-group">
-              <input type="text" placeholder="不用试了, 还没完成" class ="form-control"/>
+              <input type="text" placeholder="..." class ="form-control"/>
               <span class ="input-group-btn">
                 <button class ="btn btn-default"><span class ="glyphicon glyphicon-search"></span></button>
               </span>
