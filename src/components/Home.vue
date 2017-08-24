@@ -90,6 +90,7 @@ export default {
     mounted: function () {
 
         this.getTwoCharacters()
+
         console.log('characterList', this.characterList);
         this.heroType = heroList.typeName
 

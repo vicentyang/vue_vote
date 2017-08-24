@@ -185,11 +185,11 @@ export default {
         }
     },
     mounted() {
-      var socket = io.connect('ws://localhost:3000');
-      socket.on('onlineUsers', (data) => {
-          // NavbarActions.updateOnlineUsers(data);
-          this.onLineUsers = data.onlineUsers
-      });
+      // var socket = io.connect('ws://localhost:3000');
+      // socket.on('onlineUsers', (data) => {
+      //     // NavbarActions.updateOnlineUsers(data);
+      //     this.onLineUsers = data.onlineUsers
+      // });
       console.log('nav mount');
 
       this.heroType = heroList.typeName
