@@ -185,7 +185,7 @@ export default {
         }
     },
     mounted() {
-      var socket = io.connect('ws://localhost:3000');
+      var socket = io.connect('ws://192.168.1.39:3000');
       socket.on('onlineUsers', (data) => {
           // NavbarActions.updateOnlineUsers(data);
           this.onLineUsers = data.onlineUsers

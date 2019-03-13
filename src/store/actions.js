@@ -1,8 +1,8 @@
 /*
  * @Author: vicent
  * @Date:   2017-08-09 16:54:43
- * @Last Modified by: vicent
- * @Last Modified time: 2017-08-16 16:27:17
+ * @Last Modified by:   vicent
+ * @Last Modified time: 2017-08-24 11:13:09
  */
 
 // 'use strict';
@@ -11,7 +11,7 @@
 export function getTwoCharacters({commit}) {
   var data;
 
-  $.ajax({ url: 'http://localhost:3000/api/characters' })
+  $.ajax({ url: 'http://192.168.1.39:3000/api/characters' })
     .done(_data => {
       // this.actions.getTwoCharactersSuccess(data);
       // console.log(data);
@@ -27,7 +27,7 @@ export function getTwoCharacters({commit}) {
 export function getCharacterDetail({commit}, characterId) {
 
 
-  $.ajax({ url: 'http://localhost:3000/api/characters/' + characterId })
+  $.ajax({ url: 'http://192.168.1.39:3000/api/characters/' + characterId })
     .done(_data => {
       // this.actions.getTwoCharactersSuccess(data);
       // console.log(data);
@@ -41,7 +41,7 @@ export function getCharacterDetail({commit}, characterId) {
 }
 
 export function getTopCharacterList ({commit}) {
-    $.ajax({ url: 'http://localhost:3000/api/characters/top' })
+    $.ajax({ url: 'http://192.168.1.39:3000/api/characters/top' })
     .done(_data => {
       // this.actions.getTwoCharactersSuccess(data);
       // console.log(data);
@@ -55,7 +55,7 @@ export function getTopCharacterList ({commit}) {
 }
 
 export function sendVote ({commit}, data) {
-    // $.ajax({ url: 'http://localhost:3000/api/characters', type: 'PUT', data: {winner: data.winner, loser: data.loser}})
+    // $.ajax({ url: 'http://192.168.1.39:3000/api/characters', type: 'PUT', data: {winner: data.winner, loser: data.loser}})
     // .done(_data => {
     //   // this.actions.getTwoCharactersSuccess(data);
     //   // console.log(data);
@@ -69,7 +69,7 @@ export function sendVote ({commit}, data) {
 
     $.ajax({
       type: 'PUT',
-      url: 'http://localhost:3000/api/characters' ,
+      url: 'http://192.168.1.39:3000/api/characters' ,
       data: { winner: data.winner, loser: data.loser }
       // data: `winner=${data.winnder}&loser=${data.loser}`
     })
@@ -85,7 +85,7 @@ export function sendVote ({commit}, data) {
 
 // export function getTwoCharacters(context) {
 //   var data;
-//   $.ajax({ url: 'http://localhost:3000/api/characters' })
+//   $.ajax({ url: 'http://192.168.1.39:3000/api/characters' })
 //     .done(_data => {
 //       // this.actions.getTwoCharactersSuccess(data);
 //       // console.log(data);
